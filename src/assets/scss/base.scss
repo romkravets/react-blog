@@ -1,9 +1,32 @@
 @import './_variables';
 @import './_navigation';
+@import './_home';
+@import './_masonry-post';
+@import './_post-masonry';
 
-body {
+html body {
    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
    font-weight: 500;
    margin: 0;
-   background-color: #f8f9fa;
+   background-color: $background;
+}
+
+.container {
+   max-width: 1200px;
+   margin:  0 auto;
+}
+
+.row {
+   margin: 4em 20px;
+}
+
+.overlay::before {
+   z-index: 1;
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   left: 0;
+   background: linear-gradient(180deg, transparent 0%, transparent 18%, rgba(0,0,0,0.8) 99%, rgba(0,0,0,0.8) 100%);
 }
