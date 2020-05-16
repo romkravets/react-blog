@@ -1,6 +1,7 @@
 import React from 'react'
-import {PostMasonry} from '../components/common'
+import {PostMasonry, MasonryPost, PostGrid} from '../components/common'
 import trending from '../assets/mocks/trending'
+import featured from '../assets/mocks/featured'
 
 const trendingConfig = {
    1: {
@@ -8,21 +9,60 @@ const trendingConfig = {
    }
 }
 
+const featuredConfig = {
+  0: {
+   gridArea: '1 / 1 / 2 / 3',
+   height: '300px'
+  },
+  1: {
+   height: '300px'
+  },
+  3: {
+   height: '630px',
+   marginLeft: '30px',
+   width: '630px'
+  }
+}
+
 const mergeStyles = function (posts, config) {
    posts.forEach((post, index) => {
       post.style = config[index]
+      post.author = 'Kravets'
+      post.description = 'lorem'
    })
 }
 
-mergeStyles(trending, trendingConfig)
+const recentPosts = [...trending, ...featured, ...featured]
+
+mergeStyles(trending, trendingConfig);
+mergeStyles(featured, featuredConfig);
+
+const lastFeatured = featured.pop();
 
 export default function Home() {
    return (
-   <section className="container home">
-      <div className="row">
-         <h2>Trending Posts</h2>
-         <PostMasonry posts={trending} columns={3}/>
-      </div>
-   </section>
+   <main className="home">
+      <section className="container">
+         <div className="row">
+            <section className="feature-post-container">
+               <PostMasonry posts={featured} columns={2} tagsOnTop={true}/>
+               <MasonryPost post={lastFeatured} tagsOnTop={true}/>
+            </section>
+         </div>
+      </section>
+      <section className="bg-white">
+         <section className="container">
+            <div className="row">
+               <h1>Recent posts</h1>
+               <PostGrid posts={recentPosts}/>
+            </div>
+         </section>
+      </section>
+      <section className="container">
+         <div className="row">
+            <PostMasonry posts={trending} columns={3}/>
+         </div>
+      </section>
+   </main>
    )
 }

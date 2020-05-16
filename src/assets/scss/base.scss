@@ -3,6 +3,8 @@
 @import './_home';
 @import './_masonry-post';
 @import './_post-masonry';
+@import './tag-row';
+@import './post-grid';
 
 html body {
    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -25,8 +27,8 @@ html body {
    content: '';
    position: absolute;
    top: 0;
+   right: 0;
    left: 0;
    bottom: 0;
-   left: 0;
    background: linear-gradient(180deg, transparent 0%, transparent 18%, rgba(0,0,0,0.8) 99%, rgba(0,0,0,0.8) 100%);
 }

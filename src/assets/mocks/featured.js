@@ -2,35 +2,28 @@ import moment from 'moment'
 
 export default [
    {
-      title: 'Can anyone codeefefefwef?',
+      title: 'Can anyone code?wefwefwef',
       date: moment().format('MMM DD, YYYY'),
       categories: ['Tech Culture', 'Tech News'],
       link: '#',
       image: 'anyone_can_code.jpg',
    },
    {
-      title: 'Can anyone codefefefefef?',
+      title: 'Can anyone code?ffff',
       date: moment().format('MMM DD, YYYY'),
       categories: ['Tech Culture', 'Tech News'],
       link: '#',
       image: 'anyone_can_code.jpg',
    },
    {
-      title: 'Can anyone codewegegerh?',
+      title: 'Can anyone code?555',
       date: moment().format('MMM DD, YYYY'),
       categories: ['Tech Culture', 'Tech News'],
       link: '#',
       image: 'anyone_can_code.jpg',
    },
    {
-      title: 'Can anyone codey5y56u76u?',
-      date: moment().format('MMM DD, YYYY'),
-      categories: ['Tech Culture', 'Tech News'],
-      link: '#',
-      image: 'anyone_can_code.jpg',
-   },
-   {
-      title: 'Can anyone code?ewfefewf',
+      title: 'Can anyone code?000',
       date: moment().format('MMM DD, YYYY'),
       categories: ['Tech Culture', 'Tech News'],
       link: '#',
