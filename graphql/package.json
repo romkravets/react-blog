@@ -1,0 +1,17 @@
+{
+  "name": "react-block-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Rom",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-koa": "^2.14.2",
+    "graphql-tools": "^6.0.8",
+    "koa": "^2.12.0",
+    "moment": "^2.26.0"
+  }
+}
