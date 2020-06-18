@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "create-migration": "node ./database/actions/create-migration.js"
   },
   "author": "Rom",
   "license": "ISC",
