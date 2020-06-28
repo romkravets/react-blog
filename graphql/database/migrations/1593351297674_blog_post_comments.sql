@@ -1,5 +1,5 @@
-   CREATE TABLE IF NOT EXIST {}.blog_post_comments (
-      id int(12) NOT NULL auto_increment PRIMARY KEY,
+   CREATE TABLE IF NOT EXISTS {}.blog_post_comments (
+      id INT(12) NOT NULL auto_increment PRIMARY KEY,
       post_id INT(12) NOT NULL,
       author_id INT(12) NOT NULL,
       comment VARCHAR(250) NOT NULL,

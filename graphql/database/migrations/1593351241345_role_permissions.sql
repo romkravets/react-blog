@@ -1,4 +1,4 @@
-   CREATE TABLE IF NOT EXIST {}.roles_permissions (
+   CREATE TABLE IF NOT EXISTS {}.roles_permissions (
       role_id INT(12) NOT NULL,
       permission_id INT(12) NOT NULL,
       UNIQUE KEY(role_id, permission_id),

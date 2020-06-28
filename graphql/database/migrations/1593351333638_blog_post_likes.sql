@@ -1,4 +1,4 @@
-   CREATE TABLE IF NOT EXIST {}.blog_post_comments (
+   CREATE TABLE IF NOT EXISTS {}.blog_post_comments (
       post_id INT(12) NOT NULL,
       author_id INT(12) NOT NULL,
       UNIQUE KEY(post_id, author_id),
