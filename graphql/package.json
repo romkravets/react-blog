@@ -5,12 +5,14 @@
   "main": "app.js",
   "scripts": {
     "test": "test",
-    "create-migration": "node ./database/actions/create-migration.js"
+    "create-migration": "node ./database/actions/create-migration.js",
+    "run-migration": "node ./database/actions/run-migration.js"
   },
   "author": "Rom",
   "license": "ISC",
   "dependencies": {
     "apollo-server-koa": "^2.14.2",
+    "bluebird": "^3.7.2",
     "dotenv": "^8.2.0",
     "graphql-tools": "^6.0.8",
     "knex": "^0.21.1",
