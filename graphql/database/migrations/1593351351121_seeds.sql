@@ -1,4 +1,4 @@
-INSERT INFO roles(title)
+INSERT INTO roles(title)
 VALUES
 ('admin'),
 ('blogger');
@@ -8,13 +8,13 @@ VALUES
 ('post'),
 ('manage-users');
 
-INSERT INTRO roles_permissoins (role_id, permission_id)
+INSERT INTO roles_permissoins (role_id, permission_id)
 VALUES
 (1, 1),
 (1, 2),
 (2, 1);
 
-INSERT INFO users (role_id, email, first_name, last_name)
+INSERT INTO users (role_id, email, first_name, last_name)
 VALUES
 (1, 'romann.kravets@gmail.com', 'Roman', 'Kravets');
 
@@ -42,7 +42,7 @@ VALUES
 INSERT INTO blog_post_comments (post_id, author_id, comment)
 VALUES
 (1, 1, 'Totally brooo!'),
-(1, 1, 'Friggin brooo!'),
+(1, 1, 'Friggin brooo!');
 
 
 INSERT INTO blog_post_categories (post_id, category_id)
@@ -58,5 +58,5 @@ VALUES
 (6, 2),
 (7, 4),
 (8, 6),
-(9, 2);
+(9, 2),
 (9, 3);
