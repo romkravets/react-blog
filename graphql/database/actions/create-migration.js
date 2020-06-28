@@ -1,13 +1,11 @@
 const fs = require('fs');
 const path = require('path');
 
-let tableName
+let tableName;
 
 try {
-   tableName = process
-   .argv
-   .find((arg) =>
-      arg.includs('--tableName=')
+   tableName = process.argv.find(
+      (arg) => arg.includes('--tableName=')
    ).split('=')[1]
 } catch(err) {
    return console.error('--tableName not found');
