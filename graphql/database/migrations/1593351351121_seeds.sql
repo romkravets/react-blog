@@ -8,17 +8,17 @@ VALUES
 ('post'),
 ('manage-users');
 
-INSERT INTO roles_permissoins (role_id, permission_id)
+INSERT INTO role_permissions(role_id, permission_id)
 VALUES
 (1, 1),
 (1, 2),
 (2, 1);
 
-INSERT INTO users (role_id, email, first_name, last_name)
+INSERT INTO users(role_id, email, first_name, last_name)
 VALUES
 (1, 'romann.kravets@gmail.com', 'Roman', 'Kravets');
 
-INSERT INTO blog_categories (label, description)
+INSERT INTO blog_categories(label, description)
 VALUES
 ('JavaScript', 'Category description....'),
 ('React', 'Category description....'),
@@ -28,24 +28,24 @@ VALUES
 ('Brain Health', 'Category description....'),
 ('Cloud Services', 'Category description....');
 
-INSERT INTO blog_posts (author_id, title, text, image, active, keyword1, keyword2, bg_src, bg_type)
+INSERT INTO blog_posts(author_id, title, text, image, active, keyword1, keyword2, bg_src, bg_type)
 VALUES
-(1,'Lorem', 'Lorem', 'Lorem', 'anyone_can_code.jpg', 1 , 'Functional Programing', 'ES6', 'anyone_can_code.jpg', 'Image'),
-(1,'Lorem', 'Lorem', 'Lorem', 'anyone_can_code.jpg',  1 , 'Functional Programing', 'ES6', 'anyone_can_code.jpg', 'Image'),
-(1,'Lorem', 'Lorem', 'Lorem', 'anyone_can_code.jpg',  1 , 'Functional Programing', 'ES6', 'anyone_can_code.jpg', 'Image'),
-(1,'Lorem', 'Lorem', 'Lorem', 'anyone_can_code.jpg',  1 , 'Functional Programing', 'ES6', 'anyone_can_code.jpg', 'Image'),
-(1,'Lorem', 'Lorem', 'Lorem', 'anyone_can_code.jpg',  1 , 'Functional Programing', 'ES6', 'anyone_can_code.jpg', 'Image'),
-(1,'Lorem', 'Lorem', 'Lorem', 'anyone_can_code.jpg',  1 , 'Functional Programing', 'ES6', 'anyone_can_code.jpg', 'Image'),
-(1,'Lorem', 'Lorem', 'Lorem', 'anyone_can_code.jpg',  1 , 'Functional Programing', 'ES6', 'anyone_can_code.jpg', 'Image'),
-(1,'Lorem', 'Lorem', 'Lorem', 'anyone_can_code.jpg',  1 , 'Functional Programing', 'ES6', 'anyone_can_code.jpg', 'Image');
+(1,'Lorem', 'Lorem', 'anyone_can_code.jpg', 1 , 'Functional Programing', 'ES6', 'anyone_can_code.jpg', 'Image'),
+(1,'Lorem', 'Lorem', 'anyone_can_code.jpg',  1 , 'Functional Programing', 'ES6', 'anyone_can_code.jpg', 'Image'),
+(1,'Lorem', 'Lorem', 'anyone_can_code.jpg',  1 , 'Functional Programing', 'ES6', 'anyone_can_code.jpg', 'Image'),
+(1,'Lorem', 'Lorem', 'anyone_can_code.jpg',  1 , 'Functional Programing', 'ES6', 'anyone_can_code.jpg', 'Image'),
+(1,'Lorem', 'Lorem', 'anyone_can_code.jpg',  1 , 'Functional Programing', 'ES6', 'anyone_can_code.jpg', 'Image'),
+(1,'Lorem', 'Lorem', 'anyone_can_code.jpg',  1 , 'Functional Programing', 'ES6', 'anyone_can_code.jpg', 'Image'),
+(1,'Lorem', 'Lorem', 'anyone_can_code.jpg',  1 , 'Functional Programing', 'ES6', 'anyone_can_code.jpg', 'Image'),
+(1,'Lorem', 'Lorem', 'anyone_can_code.jpg',  1 , 'Functional Programing', 'ES6', 'anyone_can_code.jpg', 'Image');
 
-INSERT INTO blog_post_comments (post_id, author_id, comment)
+INSERT INTO blog_post_comments(post_id, author_id, comment)
 VALUES
 (1, 1, 'Totally brooo!'),
 (1, 1, 'Friggin brooo!');
 
 
-INSERT INTO blog_post_categories (post_id, category_id)
+INSERT INTO blog_post_categories(post_id, category_id)
 VALUES
 (1, 4),
 (1, 5),
