@@ -8,7 +8,7 @@ VALUES
 ('post'),
 ('manage-users');
 
-INSERT INTO role_permissions(role_id, permission_id)
+INSERT INTO roles_permissions(role_id, permission_id)
 VALUES
 (1, 1),
 (1, 2),
