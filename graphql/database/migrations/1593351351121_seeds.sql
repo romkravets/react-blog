@@ -28,16 +28,16 @@ VALUES
 ('Brain Health', 'Category description....'),
 ('Cloud Services', 'Category description....');
 
-INSERT INTO blog_posts(author_id, title, text, image, active, keyword1, keyword2, bg_src, bg_type)
+INSERT INTO blog_posts(author_id, title, description, text, image, active, keyword1, keyword2, bg_src, bg_type)
 VALUES
-(1,'Lorem', 'Lorem', 'anyone_can_code.jpg', 1 , 'Functional Programing', 'ES6', 'anyone_can_code.jpg', 'Image'),
-(1,'Lorem', 'Lorem', 'anyone_can_code.jpg',  1 , 'Functional Programing', 'ES6', 'anyone_can_code.jpg', 'Image'),
-(1,'Lorem', 'Lorem', 'anyone_can_code.jpg',  1 , 'Functional Programing', 'ES6', 'anyone_can_code.jpg', 'Image'),
-(1,'Lorem', 'Lorem', 'anyone_can_code.jpg',  1 , 'Functional Programing', 'ES6', 'anyone_can_code.jpg', 'Image'),
-(1,'Lorem', 'Lorem', 'anyone_can_code.jpg',  1 , 'Functional Programing', 'ES6', 'anyone_can_code.jpg', 'Image'),
-(1,'Lorem', 'Lorem', 'anyone_can_code.jpg',  1 , 'Functional Programing', 'ES6', 'anyone_can_code.jpg', 'Image'),
-(1,'Lorem', 'Lorem', 'anyone_can_code.jpg',  1 , 'Functional Programing', 'ES6', 'anyone_can_code.jpg', 'Image'),
-(1,'Lorem', 'Lorem', 'anyone_can_code.jpg',  1 , 'Functional Programing', 'ES6', 'anyone_can_code.jpg', 'Image');
+(1,'Lorem', 'Lorem', 'anyone_can_code.jpg', '', 1 , 'anyone_can_code.jpg', 'Functional Programing', 'ES6', 'Image'),
+(1,'Lorem', 'Lorem', 'anyone_can_code.jpg', '',  1 , 'anyone_can_code.jpg', 'Functional Programing', 'ES6', 'Image'),
+(1,'Lorem', 'Lorem', 'anyone_can_code.jpg', '',  1 , 'anyone_can_code.jpg', 'Functional Programing', 'ES6', 'Image'),
+(1,'Lorem', 'Lorem', 'anyone_can_code.jpg', '',  1 , 'anyone_can_code.jpg', 'Functional Programing', 'ES6', 'Image'),
+(1,'Lorem', 'Lorem', 'anyone_can_code.jpg', '',  1 , 'anyone_can_code.jpg', 'Functional Programing', 'ES6', 'Image'),
+(1,'Lorem', 'Lorem', 'anyone_can_code.jpg', '',  1 , 'anyone_can_code.jpg', 'Functional Programing', 'ES6', 'Image'),
+(1,'Lorem', 'Lorem', 'anyone_can_code.jpg', '',  1 , 'anyone_can_code.jpg', 'Functional Programing', 'ES6', 'Image'),
+(1,'Lorem', 'Lorem', 'anyone_can_code.jpg', '',  1 , 'anyone_can_code.jpg', 'Functional Programing', 'ES6', 'Image');
 
 INSERT INTO blog_post_comments(post_id, author_id, comment)
 VALUES
